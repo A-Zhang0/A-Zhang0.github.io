@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — April Zhang</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="wordmark">April Zhang<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <section class="hero" style="padding-bottom: 12px;">
+      <div class="hero-eyebrow">Selected work</div>
+      <h1 style="font-size: clamp(2rem, 5vw, 2.8rem);">Projects</h1>
+      <p class="hero-tagline">A research project from this summer, a hackathon build, and an ongoing dashboard for GDG. More to come.</p>
+    </section>
+
+    <div id="rag" class="project rule-top">
+      <div class="project-icon">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect x="6" y="8" width="22" height="18" rx="1.5" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M10 14h14M10 18h14M10 22h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Roadway Compliance RAG System</h3>
+        <span class="where">The Intersection Company &amp; WPI Lab Research — Researcher/Intern, Summer 2026</span>
+        <div class="project-tags">
+          <span>Python</span><span>LLM</span><span>RAG</span>
+        </div>
+        <p>
+          Built a retrieval-augmented generation system to help evaluate roadway compliance, pairing an LLM
+          with a curated retrieval pipeline so answers stay grounded in the actual regulations rather than
+          the model's guesses. I designed the evaluation process, wrote the core retrieval and generation
+          code, and validated outputs against real cases. The project wrapped with a final report and a
+          working proof of concept delivered to the company.
+        </p>
+        <div class="placeholder-note">
+          Add specifics here: what made the retrieval step hard, a before/after example query, your repo link,
+          or a screenshot of the output. Concrete detail is what makes this read as real work, not a resume line.
+        </div>
+      </div>
+    </div>
+
+    <div id="hackathon" class="project">
+      <div class="project-icon">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <path d="M8 24l6-14 6 14M11 19h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="10" r="3.2" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </div>
+      <div>
+        <h3>[Hackathon project — add your title]</h3>
+        <span class="where">[Event name, date, team size]</span>
+        <div class="project-tags">
+          <span>edit</span><span>your</span><span>stack</span>
+        </div>
+        <p>
+          [Two or three sentences: what problem you tackled, what you actually built in the time you had,
+          and one thing you're proud of or learned. If you won anything or shipped something demo-able,
+          say so plainly.]
+        </p>
+        <div class="placeholder-note">
+          Tell me about this one and I'll write it up properly — or drop in your own draft and I'll edit for tone.
+        </div>
+      </div>
+    </div>
+
+    <div id="florasense" class="project">
+      <div class="project-icon">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <path d="M17 26V12M17 12c-4 0-6-3-6-7 4 0 7 2 7 6M17 12c4 0 6-3 6-7-4 0-7 2-7 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <h3>FloraSense</h3>
+        <span class="where">Google Developer Group — Developer, Jan 2026 – Present</span>
+        <div class="project-tags">
+          <span>Java</span><span>APIs</span><span>Analytics</span>
+        </div>
+        <p>
+          Working with a small team to apply software solutions to real-world company analytics.
+          I contribute to backend logic and data processing using external APIs and Java, building
+          out an analytics dashboard aimed at making the underlying data simple to read at a glance.
+        </p>
+        <div class="placeholder-note">
+          Add a link once it's live, or a screenshot of the dashboard — even a rough one helps.
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
+    <span>April Zhang, 2026</span>
+    <a href="contact.html" class="underline-link">Get in touch</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
