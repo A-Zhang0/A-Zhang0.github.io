@@ -42,18 +42,33 @@
         <h3>Roadway Compliance RAG System</h3>
         <span class="where">The Intersection Company &amp; WPI Lab Research — Researcher/Intern, Summer 2026</span>
         <div class="project-tags">
-          <span>Python</span><span>LLM</span><span>RAG</span>
+          <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Gemini / Vertex AI</span><span>pandas</span>
         </div>
         <p>
-          Built a retrieval-augmented generation system to help evaluate roadway compliance, pairing an LLM
-          with a curated retrieval pipeline so answers stay grounded in the actual regulations rather than
-          the model's guesses. I designed the evaluation process, wrote the core retrieval and generation
-          code, and validated outputs against real cases. The project wrapped with a final report and a
-          working proof of concept delivered to the company.
+          A retrieval-augmented pipeline that checks real Massachusetts road segments against pavement-marking
+          and accessibility regulations — built in five stages. First, I filtered the state's full road
+          inventory down to segments with genuinely usable shoulder and surface-width data (screening out
+          zeros that just meant "not recorded," not "zero-width"). Next, I chunked and embedded three source
+          documents — MUTCD Chapter 3, MA-PDDG Chapter 5, and PROWAG's technical requirements — into a Chroma
+          vector store, tagging every chunk with its source document for traceability.
+        </p>
+        <p>
+          On top of that I built a compliance checker that retrieves the relevant regulation text per domain
+          (shoulder width, lane width, sidewalk width, crosswalk presence), feeds it to Gemini alongside the
+          road data, and requires a structured JSON verdict citing the exact rule and source — with an explicit
+          rule that PROWAG wins when documents conflict, and "Insufficient Data" over a guess when the
+          numbers just aren't there. I then hardened it for real field data on Lexington road segments,
+          tightening the prompt with explicit edge-line vs. center-line definitions after early runs kept
+          confusing the two, and fixing a token-limit bug that was silently truncating responses. The last
+          stage stress-tested the pipeline against a larger synthetic dataset with resumable, rate-limited
+          runs so a crash wouldn't lose progress. The project wrapped with a final report and a working
+          proof of concept delivered to the company.
         </p>
         <div class="placeholder-note">
-          Add specifics here: what made the retrieval step hard, a before/after example query, your repo link,
-          or a screenshot of the output. Concrete detail is what makes this read as real work, not a resume line.
+          Client research — check with The Intersection Company / WPI before publishing the actual source
+          code publicly, since it was built for their use. Safe to describe the approach (like above); the
+          code itself may need their sign-off before it goes in a public repo. Add a link here once you've
+          confirmed, or leave it description-only.
         </div>
       </div>
     </div>
@@ -66,18 +81,23 @@
         </svg>
       </div>
       <div>
-        <h3>[Hackathon project — add your title]</h3>
-        <span class="where">[Event name, date, team size]</span>
+        <h3>DevFest 2026 Itinerary Planner</h3>
+        <span class="where">DevFest 2026 Hackathon — Full-stack, built and demoed with a team</span>
         <div class="project-tags">
-          <span>edit</span><span>your</span><span>stack</span>
+          <span>Full-stack</span><span>Trip planning</span><span>Optimization</span>
         </div>
         <p>
-          [Two or three sentences: what problem you tackled, what you actually built in the time you had,
-          and one thing you're proud of or learned. If you won anything or shipped something demo-able,
-          say so plainly.]
+          Built a trip-planning app end to end with a team: it generates day-by-day itineraries, lets
+          people plan and adjust trips collaboratively, and factors in budget and logistics rather than
+          just listing sights. I worked across the stack, roughly evenly split between frontend and
+          backend. We finished and demoed a working version by the end of the event.
         </p>
+        <div class="project-links">
+          <a class="underline-link" href="https://github.com/ananyaasri783/DevFest-2026-Itinerary-Planner" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
         <div class="placeholder-note">
-          Tell me about this one and I'll write it up properly — or drop in your own draft and I'll edit for tone.
+          Add a screenshot or short demo clip here if you have one — a quick GIF of the itinerary being
+          generated will do more than a paragraph of description.
         </div>
       </div>
     </div>
