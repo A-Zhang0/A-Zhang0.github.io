@@ -28,7 +28,7 @@
     <section class="hero" style="padding-bottom: 12px;">
       <div class="hero-eyebrow">Selected work</div>
       <h1 style="font-size: clamp(2rem, 5vw, 2.8rem);">Projects</h1>
-      <p class="hero-tagline">Research, coursework, a hackathon build, and ongoing community work. More to come.</p>
+      <p class="hero-tagline">Research, a hackathon build, ongoing community work, and coursework. More to come.</p>
     </section>
 
     <div id="rag" class="project rule-top">
@@ -66,74 +66,6 @@
         </p>
         <div class="project-links">
           <a class="underline-link" href="https://github.com/A-Zhang0/IntersectionCompanyRAGSystem" target="_blank" rel="noopener">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div id="mnist" class="project">
-      <div class="project-icon">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-          <circle cx="11" cy="12" r="2.6" stroke="currentColor" stroke-width="1.6"/>
-          <circle cx="23" cy="10" r="2.6" stroke="currentColor" stroke-width="1.6"/>
-          <circle cx="17" cy="23" r="2.6" stroke="currentColor" stroke-width="1.6"/>
-          <path d="M13 13.5l2.5 7M20.8 11.6l-2.3 9" stroke="currentColor" stroke-width="1.3" stroke-dasharray="2 2"/>
-        </svg>
-      </div>
-      <div>
-        <h3>Exploring K-means Clustering on MNIST</h3>
-        <span class="where">ESE 1050, WashU — with Samantha Nelson, Fall 2025</span>
-        <div class="project-tags">
-          <span>MATLAB</span><span>Unsupervised Learning</span><span>k-means++</span>
-        </div>
-        <p>
-          Built a handwritten-digit classifier from scratch on top of k-means clustering, no built-in
-          clustering functions allowed. We implemented a k-means++ style initialization — picking each
-          new centroid as the point farthest from the ones already chosen, so the 40 starting centroids
-          spread across the dataset instead of clumping — then iterated the standard assign/update loop
-          to convergence, tracking cost at every step. Each centroid was auto-labeled by majority vote
-          from its training members, turning the clusters into a working classifier.
-        </p>
-        <p>
-          We also built outlier detection on top of it: for each cluster, we computed the mean and
-          standard deviation of distances from member points to the centroid, then flagged any test
-          point more than two standard deviations out. The result was 77.5% accuracy on a 200-image
-          test set (155/200 correct) with 9 points flagged as outliers. Ones and twos classified
-          cleanly; fives and eights were the most commonly confused, since their handwritten shapes
-          overlap the most.
-        </p>
-        <div class="placeholder-note">
-          Have the write-up or repo public? Send a link and I'll add it here alongside the description.
-        </div>
-      </div>
-    </div>
-
-    <div id="optics" class="project">
-      <div class="project-icon">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-          <ellipse cx="17" cy="17" rx="5" ry="9" stroke="currentColor" stroke-width="1.6"/>
-          <path d="M4 10l9 7-9 7M30 10l-9 7 9 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div>
-        <h3>Optical Imaging as a Linear System</h3>
-        <span class="where">ESE 105, WashU — with Samantha Nelson, Fall 2025</span>
-        <div class="project-tags">
-          <span>MATLAB</span><span>Linear Algebra</span><span>Ray Optics</span>
-        </div>
-        <p>
-          Modeled a camera-like optical system entirely as linear algebra: each ray is a 4-vector of
-          position and angle in two planes, and every optical element — free-space propagation, a thin
-          lens — is just a 4×4 matrix applied to it. We simulated a fan of rays from two source points,
-          propagated them through free space to show how they spread, then added a finite lens with a
-          focal length and physical radius, filtering out any ray that missed the lens aperture entirely
-          before bending the ones that hit it and propagating them onward to an image plane — showing
-          the rays from each source point converge back to a single location, the way a real lens forms
-          an image.
-        </p>
-        <div class="placeholder-note">
-          Have you gotten to the hologram-recovery part (Part 2/3 of the case study) yet? Send the
-          follow-up code and I'll extend this write-up — right now it only covers the free-space and
-          lens sections.
         </div>
       </div>
     </div>
@@ -176,14 +108,70 @@
           <span>Java</span><span>APIs</span><span>Analytics</span>
         </div>
         <p>
-          Currently working with a small GDG team to apply software solutions to real-world analytics
-          for <a class="underline-link" href="https://capacity.com/" target="_blank" rel="noopener">Capacity</a>,
-          continuing on from earlier work on a similar analytics dashboard project (FloraSense).
+          Working with a small GDG team to apply software solutions to real-world analytics for
+          <a class="underline-link" href="https://capacity.com/" target="_blank" rel="noopener">Capacity</a>,
+          contributing to backend logic and data processing to build out an analytics dashboard.
         </p>
-        <div class="placeholder-note">
-          Tell me more about what you're actually building for Capacity and I'll write this up properly,
-          the way the RAG and MNIST write-ups are — specifics on what you're building beat a general description.
+      </div>
+    </div>
+
+    <div id="mnist" class="project rule-top">
+      <div class="project-icon">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <circle cx="11" cy="12" r="2.6" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="23" cy="10" r="2.6" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="17" cy="23" r="2.6" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M13 13.5l2.5 7M20.8 11.6l-2.3 9" stroke="currentColor" stroke-width="1.3" stroke-dasharray="2 2"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Exploring K-means Clustering on MNIST</h3>
+        <span class="where">ESE 1050, WashU — with Samantha Nelson, Fall 2025</span>
+        <div class="project-tags">
+          <span>MATLAB</span><span>Unsupervised Learning</span><span>k-means++</span>
         </div>
+        <p>
+          Built a handwritten-digit classifier from scratch on top of k-means clustering, no built-in
+          clustering functions allowed. We implemented a k-means++ style initialization — picking each
+          new centroid as the point farthest from the ones already chosen, so the 40 starting centroids
+          spread across the dataset instead of clumping — then iterated the standard assign/update loop
+          to convergence, tracking cost at every step. Each centroid was auto-labeled by majority vote
+          from its training members, turning the clusters into a working classifier.
+        </p>
+        <p>
+          We also built outlier detection on top of it: for each cluster, we computed the mean and
+          standard deviation of distances from member points to the centroid, then flagged any test
+          point more than two standard deviations out. The result was 77.5% accuracy on a 200-image
+          test set (155/200 correct) with 9 points flagged as outliers. Ones and twos classified
+          cleanly; fives and eights were the most commonly confused, since their handwritten shapes
+          overlap the most.
+        </p>
+      </div>
+    </div>
+
+    <div id="optics" class="project">
+      <div class="project-icon">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <ellipse cx="17" cy="17" rx="5" ry="9" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M4 10l9 7-9 7M30 10l-9 7 9 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Optical Imaging as a Linear System</h3>
+        <span class="where">ESE 105, WashU — with Samantha Nelson, Fall 2025</span>
+        <div class="project-tags">
+          <span>MATLAB</span><span>Linear Algebra</span><span>Ray Optics</span>
+        </div>
+        <p>
+          Modeled a camera-like optical system entirely as linear algebra: each ray is a 4-vector of
+          position and angle in two planes, and every optical element — free-space propagation, a thin
+          lens — is just a 4×4 matrix applied to it. We simulated a fan of rays from two source points,
+          propagated them through free space to show how they spread, then added a finite lens with a
+          focal length and physical radius, filtering out any ray that missed the lens aperture entirely
+          before bending the ones that hit it and propagating them onward to an image plane — showing
+          the rays from each source point converge back to a single location, the way a real lens forms
+          an image.
+        </p>
       </div>
     </div>
   </div>
